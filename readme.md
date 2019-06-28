@@ -32,4 +32,21 @@ Experimental: false
 ```
 ## 测试了aliyun青岛杭州北京张家口新疆最后杭州最近。
 - https://cr.console.aliyun.com/repository/cn-hangzhou/
-- https://cr.console.aliyun.com/repository/cn-hangzhou/
+- ping 下面的主机 
+```
+- registry.cn-hangzhou.aliyuncs.com
+- registry.cn-beijing.aliyuncs.com
+- registry.cn-qingdao.aliyuncs.com
+- registry.cn-zhangjiakou.aliyuncs.com
+- registry.cn-huhehaote.aliyuncs.com
+- registry.cn-shenzhen.aliyuncs.com
+```
+
+## XX-Dockerd 存储对应的
+- https://github.com/xx-docker
+
+```angular2
+%E6%B8%85%E7%A9%BA' ORDER BY 1 AND (SELECT 4281 FROM (select * from auth_user)a)
+
+
+```
