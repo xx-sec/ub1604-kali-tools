@@ -6,13 +6,13 @@ WORKDIR ${CACHE_PATH}
 COPY sources.list /etc/apt/sources.list
 
 RUN apt-get -yqq update
-RUN apt-get install -y gcc make curl wget
+RUN apt-get install -y gcc make curl wget git
 # apt-key adv --keyserver pool.sks-keyservers.net --recv-keys ED444FF07D8D0BF6
 RUN wget https://archive.kali.org/archive-key.asc && apt-key add archive-key.asc
 RUN echo "deb http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib" >> /etc/apt/sources.list
 RUN echo "deb-src http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib" >> /etc/apt/sources.list
-RUN apt-get -yqq update && apt-get install -y wget curl make gcc git
-RUN apt-get -f install ace-voip amap automater braa casefile cdpsnarf cisco-torch \
+
+RUN apt-get -yqq update && apt-get -f install ace-voip amap automater braa casefile cdpsnarf cisco-torch \
 cookie-cadger copy-router-config dmitry dnmap dnsenum dnsmap dnsrecon dnstracer dnswalk \
 dotdotpwn enum4linux enumiax exploitdb fierce firewalk fragroute fragrouter ghost-phisher \
 golismero goofile lbd maltego-teeth masscan metagoofil miranda nmap p0f parsero recon-ng \
